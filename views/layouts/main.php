@@ -29,13 +29,13 @@ AppAsset::register($this);
                 'brandLabel' => 'Konwent Pratchett',
                 'brandUrl' => Yii::$app->homeUrl,
                 'options' => [
-                    'class' => 'navbar-inverse navbar-fixed-top',
+                    'class' => 'navbar-inverse navbar-static-top',
                 ],
             ]);
             echo Nav::widget([
                 'options' => ['class' => 'navbar-nav navbar-right'],
                 'items' => [
-                    ['label' => 'Home', 'url' => ['/page/index']],
+                    ['label' => 'Home', 'url' => ['/']],
                     Yii::$app->user->isGuest ?
                         ['label' => 'Login', 'url' => ['/site/login']] :
                         ['label' => 'Logout (' . Yii::$app->user->identity->username . ')',
@@ -57,7 +57,7 @@ AppAsset::register($this);
     <footer class="footer">
         <div class="container">
             <p class="pull-left">&copy; konwent-pratchett.pl 2014 - <?= date('Y') ?></p>
-            <p class="pull-right"><a href="https://github.com/pratchettwroclaw/konwentcms"><img src="/img/github.png" alt="fork me on github!" /></a></p>
+            <p class="pull-right"><a href="https://github.com/pratchettwroclaw/konwentcms"><img src="img/github.png" alt="fork me on github!" /></a></p>
         </div>
     </footer>
 

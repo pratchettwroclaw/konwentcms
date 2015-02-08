@@ -57,7 +57,7 @@ AppAsset::register($this);
     <footer class="footer">
         <div class="container">
             <p class="pull-left">&copy; konwent-pratchett.pl 2014 - <?= date('Y') ?></p>
-            <p class="pull-right"><?= Yii::powered() ?></p>
+            <p class="pull-right"><a href="https://github.com/pratchettwroclaw/konwentcms"><img src="/img/github.png" alt="fork me on github!" /></a></p>
         </div>
     </footer>
 

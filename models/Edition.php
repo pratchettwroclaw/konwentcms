@@ -7,7 +7,7 @@
  */
 
 namespace app\models;
-
+use yii\db\ActiveRecord;
 
 class Edition extends ActiveRecord{
     public static function tableName(){

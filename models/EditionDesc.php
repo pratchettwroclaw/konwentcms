@@ -7,7 +7,7 @@
  */
 
 namespace app\models;
-
+use yii\db\ActiveRecord;
 
 class EditionDesc extends ActiveRecord{
     public static function tableName(){

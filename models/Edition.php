@@ -9,7 +9,7 @@
 namespace app\models;
 
 
-class Edition {
+class Edition extends ActiveRecord{
     public static function tableName(){
         return 'edycje';
     }

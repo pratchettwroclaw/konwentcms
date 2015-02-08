@@ -9,7 +9,7 @@
 namespace app\models;
 
 
-class Lang {
+class Lang extends ActiveRecord{
     public static function tableName(){
         return 'jezyki';
     }

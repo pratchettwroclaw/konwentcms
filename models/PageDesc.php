@@ -9,7 +9,7 @@
 namespace app\models;
 
 
-class PageDesc {
+class PageDesc extends ActiveRecord{
     public static function tableName(){
         return 'strony_opisy';
     }

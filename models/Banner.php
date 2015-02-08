@@ -9,7 +9,7 @@
 namespace app\models;
 
 
-class Banner {
+class Banner extends ActiveRecord{
     public static function tableName(){
         return 'banery';
     }

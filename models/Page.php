@@ -13,4 +13,9 @@ class Page extends ActiveRecord{
     public static function tableName(){
         return 'strony';
     }
+
+    public function getName(){
+        $desc = PageDesc::find()->andWhere('main_id='.$this->id.' AND jezyk="pl"');
+        var_dump($desc);
+    }
 } 

@@ -9,7 +9,7 @@
 namespace app\models;
 
 
-class Quot {
+class Quot extends ActiveRecord{
     public static function tableName(){
         return 'cytaty';
     }

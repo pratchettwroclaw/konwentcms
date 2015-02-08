@@ -9,7 +9,7 @@
 namespace app\models;
 
 
-class QuotDesc {
+class QuotDesc extends ActiveRecord{
     public static function tableName(){
         return 'cytaty_opisy';
     }

@@ -9,7 +9,7 @@
 namespace app\models;
 
 
-class News {
+class News extends ActiveRecord{
     public static function tableName(){
         return 'newsy';
     }

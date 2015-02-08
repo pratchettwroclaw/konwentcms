@@ -9,7 +9,7 @@
 namespace app\models;
 
 
-class EditionDesc {
+class EditionDesc extends ActiveRecord{
     public static function tableName(){
         return 'edycje_opisy';
     }

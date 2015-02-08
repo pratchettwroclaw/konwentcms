@@ -9,7 +9,7 @@
 namespace app\models;
 
 
-class NewsPicksDesc {
+class NewsPicksDesc extends ActiveRecord{
     public static function tableName(){
         return 'newsy_zdjecia_opisy';
     }

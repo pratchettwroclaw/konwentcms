@@ -9,7 +9,7 @@
 namespace app\models;
 
 
-class BannerDesc {
+class BannerDesc extends ActiveRecord{
     public static function tableName(){
         return 'banery_opisy';
     }

@@ -9,7 +9,7 @@
 namespace app\models;
 
 
-class NewsDesc {
+class NewsDesc extends ActiveRecord{
     public static function tableName(){
         return 'newsy_opisy';
     }

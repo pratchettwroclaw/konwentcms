@@ -9,7 +9,7 @@
 namespace app\models;
 
 
-class Picks {
+class Picks extends ActiveRecord{
     public static function tableName(){
         return 'zdjecia';
     }

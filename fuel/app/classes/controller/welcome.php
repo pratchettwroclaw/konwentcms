@@ -30,6 +30,8 @@ class Controller_Welcome extends Controller
 	 */
 	public function action_index()
 	{
+        $page = new \Model_Page();
+        var_dump($page);
 		return Response::forge(View::forge('welcome/index'));
 	}
 

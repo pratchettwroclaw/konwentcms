@@ -7,9 +7,9 @@
  */
 
 namespace app\models;
+use yii\db\ActiveRecord;
 
-
-class PicksDesc {
+class PicksDesc extends ActiveRecord{
     public static function tableName(){
         return 'zdjecia_opisy';
     }

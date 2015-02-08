@@ -7,9 +7,9 @@
  */
 
 namespace app\models;
+use yii\db\ActiveRecord;
 
-
-class Quot {
+class Quot extends ActiveRecord{
     public static function tableName(){
         return 'cytaty';
     }

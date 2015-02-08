@@ -7,9 +7,9 @@
  */
 
 namespace app\models;
+use yii\db\ActiveRecord;
 
-
-class Picks {
+class Picks extends ActiveRecord{
     public static function tableName(){
         return 'zdjecia';
     }

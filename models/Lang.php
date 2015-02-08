@@ -7,9 +7,9 @@
  */
 
 namespace app\models;
+use yii\db\ActiveRecord;
 
-
-class Lang {
+class Lang extends ActiveRecord{
     public static function tableName(){
         return 'jezyki';
     }

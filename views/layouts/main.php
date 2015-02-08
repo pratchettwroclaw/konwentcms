@@ -32,10 +32,16 @@ AppAsset::register($this);
                     'class' => 'navbar-inverse navbar-static-top',
                 ],
             ]);
+        $page = new \app\models\Page();
+        $pages = $page->find()->all();
+        foreach($pages as $p){
+            $p->getName();
+        }
             echo Nav::widget([
                 'options' => ['class' => 'navbar-nav navbar-right'],
                 'items' => [
                     ['label' => 'Home', 'url' => ['/']],
+
                     Yii::$app->user->isGuest ?
                         ['label' => 'Login', 'url' => ['/site/login']] :
                         ['label' => 'Logout (' . Yii::$app->user->identity->username . ')',

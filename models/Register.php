@@ -7,9 +7,9 @@
  */
 
 namespace app\models;
+use yii\db\ActiveRecord;
 
-
-class Register {
+class Register extends ActiveRecord{
     public static function tableName(){
         return 'rejestracja';
     }

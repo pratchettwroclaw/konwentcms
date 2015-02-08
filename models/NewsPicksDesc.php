@@ -7,9 +7,9 @@
  */
 
 namespace app\models;
+use yii\db\ActiveRecord;
 
-
-class NewsPicksDesc {
+class NewsPicksDesc extends ActiveRecord{
     public static function tableName(){
         return 'newsy_zdjecia_opisy';
     }

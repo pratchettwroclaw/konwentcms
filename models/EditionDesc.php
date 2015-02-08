@@ -7,9 +7,9 @@
  */
 
 namespace app\models;
+use yii\db\ActiveRecord;
 
-
-class EditionDesc {
+class EditionDesc extends ActiveRecord{
     public static function tableName(){
         return 'edycje_opisy';
     }

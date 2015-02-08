@@ -7,9 +7,9 @@
  */
 
 namespace app\models;
+use yii\db\ActiveRecord;
 
-
-class BannerDesc {
+class BannerDesc extends ActiveRecord{
     public static function tableName(){
         return 'banery_opisy';
     }

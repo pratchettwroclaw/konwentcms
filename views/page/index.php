@@ -2,7 +2,7 @@
 use yii\helpers\Html;
 use yii\widgets\LinkPager;
 ?>
-    <h1>Pages</h1>
+    <h1>Strony</h1>
     <ul>
         <?php foreach ($pages as $page): ?>
             <li>

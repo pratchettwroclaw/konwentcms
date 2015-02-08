@@ -7,5 +7,5 @@ php:
 before_script:
     - mysql -e 'create database konwent;'
     - mysql -u root konwent < konwent.sql
-    - mysql -e 'show databases'
+    - mysqldump -u root konwent
 script: phpunit --coverage-text tests/

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 08, 2015 at 01:33 PM
+-- Generation Time: Feb 08, 2015 at 01:54 PM
 -- Server version: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -84,7 +84,8 @@ CREATE TABLE IF NOT EXISTS `edycje` (
 `id` int(11) NOT NULL,
   `data` date NOT NULL,
   `miejsce` varchar(255) NOT NULL,
-  `data_koniec` date NOT NULL
+  `data_koniec` date NOT NULL,
+  `szablon` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
@@ -188,7 +189,9 @@ CREATE TABLE IF NOT EXISTS `rejestracja` (
   `pelnoletni` tinyint(1) NOT NULL,
   `spanie` varchar(255) NOT NULL,
   `jedzenie` varchar(255) NOT NULL,
-  `uwagi` text
+  `uwagi` text,
+  `zaplacone` varchar(255) DEFAULT NULL,
+  `aktywny` tinyint(1) NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------

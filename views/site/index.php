@@ -2,6 +2,7 @@
 /* @var $this yii\web\View */
 $this->title = 'My Yii Application';
 $this->registerCSSFile('css/carousel.css');
+$this->registerCSSFile('css/fullscreen.css');
 ?>
 <div class="site-index">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">

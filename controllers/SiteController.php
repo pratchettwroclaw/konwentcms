@@ -9,6 +9,8 @@ use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 
+require_once("../lang/lang.php");
+
 class SiteController extends Controller
 {
     public function behaviors()
@@ -49,7 +51,10 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        return $this->render('index');
+        $definitions = \I18nSupport::getDefinitions();
+        return $this->render('index', [
+            'l' => $definitions,
+        ]);
     }
 
     public function actionLogin()

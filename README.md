@@ -1,1 +1,1 @@
-[![Build Status](https://travis-ci.org/pratchettwroclaw/konwentcms.svg?branch=master)](https://travis-ci.org/pratchettwroclaw/konwentcms)
+[![Build Status](https://travis-ci.org/pratchettwroclaw/konwentcms.svg?branch=master)](https://travis-ci.org/pratchettwroclaw/konwentcms) [![Code Climate](https://codeclimate.com/github/pratchettwroclaw/konwentcms/badges/gpa.svg)](https://codeclimate.com/github/pratchettwroclaw/konwentcms)
